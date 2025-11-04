@@ -37,16 +37,15 @@ def grade(g):
 #if both are the case then print "Fizzbuzz" instead of the prior two
 #if niether are the case print the number.
 def fizzBuzz(n):
-    n = input("Give me a number")
-    n = int(n)
+    #n = input("Give me a number")
     if(n%5==0 and n%3==0):
-        return( "FizzBuzz")
+        return "FizzBuzz"
     elif(n%3==0):
-        return ("fizz")
+        return "fizz"
     elif(n%5==0):
-        return ("buzz")
+        return "buzz"
     else:
-        return(n)
+        return n
 
 #modify the below function such that it asks the user for an input number.
 #if the number is even divide it by two.
@@ -54,7 +53,7 @@ def fizzBuzz(n):
 #then print the new number.
 def collatz(n):
     if(n==1):
-        print (n)
+        return (n)
     if(n%2==0):
         return (n/2)
     else:
